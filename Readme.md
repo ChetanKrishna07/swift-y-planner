@@ -1,5 +1,5 @@
 
-** Swift(y) Planner **
+# Swift(y) Planner
 
 ## Team:
 CKPPGVVCM
