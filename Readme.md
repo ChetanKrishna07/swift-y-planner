@@ -1,6 +1,8 @@
----
 
 ** Swift(y) Planner **
+
+## Team:
+CKPPGVVCM
 
 ## **📌 Project Overview**
 
@@ -8,7 +10,6 @@
 
 A simple yet smart **AI-powered project planner & tracker** that helps individuals break down their **personal projects** into structured **tasks, phases, sprints, and timelines** using AI. The system provides structural planning followed by a interactive chatbot for refining.
 
----
 
 ## **🛠 Workflow Breakdown**
 
