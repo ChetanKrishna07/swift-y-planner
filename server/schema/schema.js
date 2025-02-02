@@ -140,6 +140,15 @@ const mutation = new GraphQLObjectType({
         return user.save();
       },
     },
+    deleteUser: {
+      type: UserType,
+      args: {
+        id: { type: GraphQLNonNull(GraphQLID) },
+      },
+      resolve(parent, args) {
+        return User.findByIdAndDelete(args.id);
+      },
+    },
     addTask: {
       type: TaskType,
       args: {
@@ -187,6 +196,15 @@ const mutation = new GraphQLObjectType({
         return task.save();
       },
     },
+    deleteTask: {
+        type: TaskType,
+        args: {
+            id: { type: GraphQLNonNull(GraphQLID) },
+        },
+        resolve(parent, args) {
+            return Task.findByIdAndDelete(args.id)
+        }
+    },
     addProject: {
       type: ProjectType,
       args: {
@@ -207,6 +225,15 @@ const mutation = new GraphQLObjectType({
         return project.save();
       },
     },
+    deleteProject: {
+        type: ProjectType,
+        args: {
+            id: { type: GraphQLNonNull(GraphQLID) },
+        },
+        resolve(parent, args) {
+            return Project.findByIdAndDelete(args.id)
+        }
+    }
   },
 });
 
